@@ -11,17 +11,16 @@
 
 <header id="main-header">
 <div class="container flex space-between">
-<a id="om" class="flex center-both" href="/"><img  src="<?= IMG_URL;?>/om-circle.svg"/></a>
+<a id="om" class="flex center-both" href="/"><img  src="<?= IMG_URL;?>/om-circle-phatt.svg"/></a>
 <nav>
      <ul class="flex">
         <li><a href="/work">WORK</a>
-        <ul>
+        <!-- <ul>
             <li><a href="/work/development">WEB DEVELOPMENT</a></li>
             <li><a href="/work/design">GRAPHIC DESIGN</a></li>
-        </ul>
+        </ul> -->
         </li>
         <li><a href="/about">ABOUT</a></li>
-        <li><a href="/contact">CONTACT</a></li>
      </ul>
 </nav>
 </div>

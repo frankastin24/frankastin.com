@@ -2,20 +2,7 @@
 
 get_header('portfolio');
 
-$args = array(
-    'post_type' => 'portfolio',
-    'orderby' => 'menu_order',
-    'order' => 'ASC',
-    'tax_query' => array(
-        array(
-            'taxonomy' => 'year',
-            'field' => 'slug',
-            'terms' => '2024',
-        ),
-    ),
-);
 
-$query = new WP_Query($args);
 
 ?>
 <div id="portfolio-hero">
@@ -32,17 +19,35 @@ $query = new WP_Query($args);
 
 <div id="portfolio" class="container">
 
-    <h1>2024</h1>
 
-    <div class="portfolio-container">
+<?php 
+
+function render_entries($year) {
+    $args = array(
+        'post_type' => 'portfolio',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'year',
+                'field' => 'slug',
+                'terms' => $year,
+            ),
+        ),
+    );
+    ?>
+    <div class="portfolio-container year-<?= $year;?>">
+    
+    <h1><?= $year;?></h1>
         <?php
+        
+        
+        $query = new WP_Query($args);
         foreach ($query->posts as $portfolio) {
         ?>
-            <a class="portfolio-entry" href="<?= get_the_permalink($portfolio->ID); ?>" style="background-image:url(<?= get_the_post_thumbnail_url($portfolio->ID) ?>)">
+            <a class="portfolio-entry  <?= strtolower(str_replace(' ', '-' ,get_the_title($portfolio->ID)));?>" href="<?= get_the_permalink($portfolio->ID); ?>" style="background-image:url(<?= get_the_post_thumbnail_url($portfolio->ID) ?>)">
             <div class="overlay">   
            
                 <h2><?= get_the_title($portfolio->ID); ?></h2>
-                <p><?= strip_tags(substr($portfolio->post_content,0,600)) ?>... <span>read more</span></p>
+                <p><?= strip_tags(substr($portfolio->post_content,0,500)) ?><?= strlen($portfolio->post_content) > 500 ? '...' :'' ;?></p>
 
                 <div class="skills flex">
                     <?php
@@ -63,54 +68,19 @@ $query = new WP_Query($args);
         }
         ?>
     </div>
-
-
-    <h1>2023</h1>
-
-
     <?php
-    $args = array(
-        'post_type' => 'portfolio',
-        'orderby' => 'menu_order',
-    'order' => 'ASC',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'year',
-                'field' => 'slug',
-                'terms' => '2023',
-            ),
-        ),
-    );
-    $query = new WP_Query($args);
-
-    ?>
-
-    <div class="portfolio-container">
-        <?php
-        foreach ($query->posts as $portfolio) {
-        ?>
-            <a class="portfolio-entry" href="<?= get_the_permalink($portfolio->ID); ?>" style="background-image:url(<?= get_the_post_thumbnail_url($portfolio->ID) ?>)">
-                <div class="overlay">
-                <h2><?= get_the_title($portfolio->ID); ?></h2>
-            
-                <div class="skills">
-                
-                <?php
+}
 
 
-                $skills = explode(',', get_post_meta($portfolio->ID, 'skills', true));
+render_entries('2025');
+render_entries('2024');
+render_entries('2023');
 
-                foreach ($skills as $skill) {
-                ?>
-                    <span><?= $skill; ?></span>
-                <?php
-                }
-                ?>
-                </div>
-                </div>
-            </a>
-        <?php
-        }
-        ?>
-    </div>
+?>
+
+
+
+  
+
+
 </div>

@@ -19,13 +19,12 @@
 
      <ul class="flex">
         <li><a href="/work">WORK</a>
-        <ul>
+        <!-- <ul>
             <li><a href="/work/development">WEB DEVELOPMENT</a></li>
             <li><a href="/work/design">GRAPHIC DESIGN</a></li>
-        </ul>
+        </ul> -->
         </li>
         <li><a href="/about">ABOUT</a></li>
-        <li><a href="/contact">CONTACT</a></li>
      </ul>
 </nav>
 </div>

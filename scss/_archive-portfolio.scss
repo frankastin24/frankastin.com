@@ -2,7 +2,7 @@
     background-image: url(../img/portfolio-header.png);
     background-size: cover;
     position: absolute;
-    height: 550px;
+    height: 600px;
     width: 100%;
 
     .overlay {
@@ -13,19 +13,19 @@
         h3 {
             color: #dde6f5;
             position: absolute;
-            bottom: 20px;
-            font-size: 130px;
+            bottom: 60px;
+            font-size: 100px;
         }
     }
 }
 
 #portfolio {
-    margin-top: 640px;
-    position: absolute;
+    padding-top: 680px;
+  
 
 
     width: 80%;
-    left: 10%;
+    margin-left: 10%;
 
     h1 {
         font-size: 80px;
@@ -143,8 +143,8 @@
     width: 50%;
     right: 0px;
         }
-        .year-2023 {
-
+        &.year-2023 {
+            height:1800px;
         }
         .goflexi-coache-booking-system {
             height: 560px;
@@ -157,6 +157,21 @@
             background-position: -200px 0px;
             width: 50%;
             top:380px;
+            right:0px;
+        }
+
+        .perfecta-travel-booking-system {
+            height: 560px;
+            top:740px;
+            width: calc(50% - 40px);
+            background-position: -100px 0px;
+        }
+
+        .travemo-club {
+            height: 570px;
+            background-position: -200px 0px;
+            width: 50%;
+            top:990px;
             right:0px;
         }
     }

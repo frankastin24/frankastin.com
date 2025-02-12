@@ -84,3 +84,7 @@ render_entries('2023');
 
 
 </div>
+
+<?php 
+get_footer();
+?>

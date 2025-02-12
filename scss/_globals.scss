@@ -12,6 +12,13 @@
     src: local('Lorimer No 2 Stencil'), url('../fonts/Roobert.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'ofelia';
+    font-style: normal;
+    font-weight: normal;
+    src:  url('../fonts/ofelia.woff2') format('woff2');
+}
+
 
 h1,h2,h3,h4,h5,h6,ul,li,a {
     font-family:'lorimer';

@@ -10,6 +10,12 @@
   font-weight: normal;
   src: local("Lorimer No 2 Stencil"), url("../fonts/Roobert.woff2") format("woff2");
 }
+@font-face {
+  font-family: "ofelia";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ofelia.woff2") format("woff2");
+}
 h1, h2, h3, h4, h5, h6, ul, li, a {
   font-family: "lorimer";
   margin: 0px;
@@ -178,7 +184,7 @@ footer p {
   background-image: url(../img/portfolio-header.png);
   background-size: cover;
   position: absolute;
-  height: 550px;
+  height: 600px;
   width: 100%;
 }
 #portfolio-hero .overlay {
@@ -189,15 +195,14 @@ footer p {
 #portfolio-hero .overlay h3 {
   color: #dde6f5;
   position: absolute;
-  bottom: 20px;
-  font-size: 130px;
+  bottom: 60px;
+  font-size: 100px;
 }
 
 #portfolio {
-  margin-top: 640px;
-  position: absolute;
+  padding-top: 680px;
   width: 80%;
-  left: 10%;
+  margin-left: 10%;
 }
 #portfolio h1 {
   font-size: 80px;
@@ -295,6 +300,9 @@ footer p {
   width: 50%;
   right: 0px;
 }
+#portfolio .portfolio-container.year-2023 {
+  height: 1800px;
+}
 #portfolio .portfolio-container .goflexi-coache-booking-system {
   height: 560px;
   background-position: -200px 0px;
@@ -305,6 +313,19 @@ footer p {
   background-position: -200px 0px;
   width: 50%;
   top: 380px;
+  right: 0px;
+}
+#portfolio .portfolio-container .perfecta-travel-booking-system {
+  height: 560px;
+  top: 740px;
+  width: calc(50% - 40px);
+  background-position: -100px 0px;
+}
+#portfolio .portfolio-container .travemo-club {
+  height: 570px;
+  background-position: -200px 0px;
+  width: 50%;
+  top: 990px;
   right: 0px;
 }
 

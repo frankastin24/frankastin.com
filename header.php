@@ -11,7 +11,7 @@
 
 <header id="main-header">
 <div class="container flex space-between">
-<a id="om" class="flex center-both" href="/"><img  src="<?= IMG_URL;?>/om-white.svg"/></a>
+<a id="om" class="flex center-both" href="/"><img  src="<?= IMG_URL;?>/om-circle.svg"/></a>
 <nav>
      <ul class="flex">
         <li><a href="/work">WORK</a>

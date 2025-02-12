@@ -9,10 +9,10 @@
 <link rel="preload" href="<?= get_template_directory_uri(  );?>/fonts/Roobert.woff2" as="font" type="font/woff2" crossorigin>
 <?php wp_body_open(); ?>
 
-<header id="main-header">
+<header class="portfolio-header" id="main-header">
 <div class="container flex space-between">
     <div class="left flex">
-<a id="om" class="flex center-both" href="/"><img  src="<?= IMG_URL;?>/om-fatt-white.svg"/></a>
+<a id="om" class="flex center-both portfolio" href="/"><img  src="<?= IMG_URL;?>/om-fatt-white.svg"/></a>
 <a href="/"><h3>FRANK ASTIN</h3></a>
 </div>
 <nav>

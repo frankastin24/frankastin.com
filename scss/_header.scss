@@ -6,20 +6,26 @@
     padding-top:20px;
 
     #om {
-       background:rgba(0,0,0,0.2);
+    
        border-radius: 100%;
+      
        
        width:50px;
        height:50px;
        img {
-          width: 60%;
-          opacity: 0.8;
+          width: 100%;
+          opacity: 1;
+       }
+       &.portfolio {
+        img {
+            width:80%;
+        }
        }
     }
     .left {
-        gap:16px;
+        gap:8px;
         h3 {
-            margin-top:13px;
+            margin-top:14px;
             font-size:26px;
             color:#dde6f5;
             letter-spacing: 1px;

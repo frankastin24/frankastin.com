@@ -11,8 +11,12 @@
 
 <header id="main-header">
 <div class="container flex space-between">
-<a id="om" class="flex center-both" href="/"><img  src="<?= IMG_URL;?>/om-white.svg"/></a>
+    <div class="left flex">
+<a id="om" class="flex center-both" href="/"><img  src="<?= IMG_URL;?>/om-fatt-white.svg"/></a>
+<a href="/"><h3>FRANK ASTIN</h3></a>
+</div>
 <nav>
+
      <ul class="flex">
         <li><a href="/work">WORK</a>
         <ul>

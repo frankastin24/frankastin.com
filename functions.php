@@ -81,7 +81,7 @@ function register_portfolio_post_type() {
 		'show_in_menu'       => true,
         'show_in_rest'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'portfolio' ),
+		'rewrite'            => array( 'slug' => 'work' ),
         'taxonomies' => array( 'post_tag','year','category'),
 		'capability_type'    => 'post',
 		'has_archive'        => true,

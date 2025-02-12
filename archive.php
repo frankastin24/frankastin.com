@@ -1,6 +1,6 @@
 <?php
 
-get_header();
+get_header('portfolio');
 
 $args = array(
     'post_type' => 'portfolio',
@@ -14,10 +14,22 @@ $args = array(
         ),
     ),
 );
+
 $query = new WP_Query($args);
 
 ?>
-<h3>Recent Projects</h3>
+<div id="portfolio-hero">
+    <div class="overlay">
+        <div class="container realtive">
+    <h3>PORTFOLIO</h3>
+        </div>
+    </div>
+
+</div>
+
+
+
+
 <div class="recent-projects">
     <h1>2024</h1>
 

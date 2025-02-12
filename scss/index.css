@@ -63,6 +63,15 @@ h1, h2, h3, h4, h5, h6, ul, li, a {
   width: 60%;
   opacity: 0.8;
 }
+#main-header .left {
+  gap: 16px;
+}
+#main-header .left h3 {
+  margin-top: 13px;
+  font-size: 26px;
+  color: #dde6f5;
+  letter-spacing: 1px;
+}
 #main-header nav ul {
   gap: 20px;
 }
@@ -156,4 +165,23 @@ h1, h2, h3, h4, h5, h6, ul, li, a {
 }
 #home-hero a:last-child {
   left: 60px;
+}
+
+#portfolio-hero {
+  background-image: url(../img/portfolio-header.png);
+  background-size: cover;
+  position: absolute;
+  height: 550px;
+  width: 100%;
+}
+#portfolio-hero .overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+#portfolio-hero .overlay h3 {
+  color: #dde6f5;
+  position: absolute;
+  bottom: 20px;
+  font-size: 130px;
 }/*# sourceMappingURL=index.css.map */
